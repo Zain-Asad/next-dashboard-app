@@ -2,6 +2,7 @@ import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 import { Revenue } from '@/app/lib/definitions';
+import { fetchRevenue } from '@/app/lib/data';
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -9,11 +10,10 @@ import { Revenue } from '@/app/lib/definitions';
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
-export default async function RevenueChart({
-  revenue,
-}: {
-  revenue: Revenue[];
-}) {
+export default async function RevenueChart() {
+
+  const revenue = await fetchRevenue(); // Fetch data inside the component
+
   const chartHeight = 350;
   // NOTE: Uncomment this code in Chapter 7
 
@@ -43,9 +43,10 @@ export default async function RevenueChart({
           {revenue.map((month) => (
             <div key={month.month} className="flex flex-col items-center gap-2">
               <div
-                className="w-full rounded-md bg-blue-300"
+                className="w-full rounded-md bg-blue-300 animate-grow-bar origin-bottom"
                 style={{
                   height: `${(chartHeight / topLabel) * month.revenue}px`,
+                  animationDelay: `${revenue.indexOf(month) * 0.05}s`,
                 }}
               ></div>
               <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
