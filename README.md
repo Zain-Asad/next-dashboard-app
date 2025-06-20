@@ -1,5 +1,14 @@
-## Next.js App Router Course - Starter
+## A dashboard application made using the Next Dashboard App tutorial
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Made using Next App Router, and handled functionalities such as:
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+- Dynamic Routing
+- Heirarchichal Organization of Pages and Layouts
+- Use of (Overview) and Loading.tsx for Suspenses and Placeholder Skeletons
+- Use of 'use client', hooks and states for session storage
+- Use of API calls for data, as well as ensuring caching
+
+To run:
+    pnpm run dev
+
+This will run the application on local host port 3000
