@@ -23,13 +23,16 @@ export default async function Page() {
     numberOfCustomers,
     totalPaidInvoices,
     totalPendingInvoices,
+    totalPaidInvoicesRaw,
+    totalPendingInvoicesRaw,
   } = await fetchCardData();
 
   const dashboardVersion = '2.1.0';
   const lastUpdated = new Date().toISOString();
-  const totalRevenue = totalPaidInvoices + totalPendingInvoices;
-  const collectionRate = numberOfInvoices > 0 
-    ? ((totalPaidInvoices / totalRevenue) * 100).toFixed(1) 
+  // Use raw numeric values for calculations
+  const totalRevenue = totalPaidInvoicesRaw + totalPendingInvoicesRaw;
+  const collectionRate = totalRevenue > 0 
+    ? ((totalPaidInvoicesRaw / totalRevenue) * 100).toFixed(1) 
     : '0.0';
  
   return (
