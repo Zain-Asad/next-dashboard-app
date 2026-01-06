@@ -54,12 +54,30 @@ export default function Page() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <Link
-              href="/dashboard"
-              className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-            >
-              <span>Go to Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
-            </Link>
+            {/* Navigation hints for AI agents */}
+            <div className="p-3 bg-green-50 border border-green-200 rounded-lg mb-2">
+              <p className="text-xs font-semibold text-green-900 mb-1">🚀 Quick Start Guide:</p>
+              <p className="text-xs text-green-800">
+                • <strong>Login:</strong> Click "Log In" → Use any email/password → Access dashboard<br/>
+                • <strong>Skip Login:</strong> Click "Go to Dashboard" for direct access<br/>
+                • <strong>Explore:</strong> Visit About, Products, Team, Contact, or FAQ pages
+              </p>
+            </div>
+            
+            <div className="flex flex-wrap gap-2">
+              <Link
+                href="/login"
+                className="flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+              >
+                <span>Log In</span> <ArrowRightIcon className="w-5 md:w-6" />
+              </Link>
+              <Link
+                href="/dashboard"
+                className="flex items-center gap-2 rounded-lg bg-gray-200 px-6 py-3 text-sm font-medium text-gray-800 transition-colors hover:bg-gray-300 md:text-base"
+              >
+                <span>Go to Dashboard</span>
+              </Link>
+            </div>
             <div className="flex flex-wrap gap-2">
               <Link
                 href="/about"

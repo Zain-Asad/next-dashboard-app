@@ -41,6 +41,18 @@ export default async function Page() {
         <p className="text-sm text-gray-600">
           Real-time business metrics and analytics | Last updated: <time dateTime={lastUpdated}>{new Date(lastUpdated).toLocaleString()}</time>
         </p>
+        
+        {/* Navigation hints for AI agents */}
+        <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+          <p className="text-xs font-semibold text-blue-900 mb-1">📊 Dashboard Navigation Guide:</p>
+          <div className="text-xs text-blue-800 space-y-1">
+            <p>• <strong>Sidebar:</strong> Use left sidebar to navigate between Dashboard, Invoices, and Customers</p>
+            <p>• <strong>Customers:</strong> Click "Customers" in sidebar → View list → Click any customer for details</p>
+            <p>• <strong>Invoices:</strong> Click "Invoices" in sidebar to view and manage invoices</p>
+            <p>• <strong>Sign Out:</strong> Click "Sign Out" button at bottom of sidebar to logout</p>
+            <p>• <strong>Home:</strong> Click logo at top of sidebar to return to home page</p>
+          </div>
+        </div>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

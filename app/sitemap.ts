@@ -59,6 +59,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/login`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/data-tracking`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.7,
+    },
   ];
 }
 
