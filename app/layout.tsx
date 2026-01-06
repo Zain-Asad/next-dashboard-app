@@ -27,22 +27,22 @@ export default function RootLayout({
     url: 'https://acme-dashboard.com',
     logo: 'https://acme-dashboard.com/logo.png',
     description: 'Leading business management platform providing comprehensive solutions for customer management, invoicing, and analytics',
-    foundingDate: '2015-01-15',
+    foundingDate: '2017-03-22',
     numberOfEmployees: {
       '@type': 'QuantitativeValue',
-      value: 250
+      value: 320
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '123 Business Avenue',
+      streetAddress: '789 Innovation Drive',
       addressLocality: 'San Francisco',
       addressRegion: 'CA',
-      postalCode: '94105',
+      postalCode: '94107',
       addressCountry: 'US'
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-555-0123',
+      telephone: '+1-555-987-6544',
       contactType: 'Customer Service',
       email: 'support@acme.com'
     }

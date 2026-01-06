@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function DataTrackingPage() {
   const lastUpdated = new Date().toISOString();
-  const siteVersion = '2.1.0';
+  const siteVersion = '3.0.0';
   const buildDate = new Date().toISOString().split('T')[0];
 
   // Site statistics
   const siteStats = {
-    totalPages: 10,
-    totalCustomers: 10000,
-    totalInvoices: 50000,
-    countriesServed: 45,
-    teamMembers: 250,
+    totalPages: 11,
+    totalCustomers: 15000,
+    totalInvoices: 75000,
+    countriesServed: 52,
+    teamMembers: 320,
     productsOffered: 4,
     faqCount: 20,
   };
@@ -26,17 +26,17 @@ export default function DataTrackingPage() {
   // Key data points that can be tracked
   const trackableData = {
     companyName: 'Acme Corporation',
-    foundedDate: '2015-01-15',
+    foundedDate: '2017-03-22',
     headquarters: {
-      street: '123 Business Avenue',
+      street: '789 Innovation Drive',
       city: 'San Francisco',
       state: 'CA',
-      zip: '94105',
+      zip: '94107',
       country: 'United States',
     },
     contact: {
       email: 'info@acme.com',
-      phone: '+1 (555) 123-4567',
+      phone: '+1 (555) 987-6543',
       supportEmail: 'support@acme.com',
     },
     socialMedia: {
@@ -45,10 +45,10 @@ export default function DataTrackingPage() {
       facebook: 'acmecorporation',
     },
     awards: [
-      'Best Business Software 2023',
-      'Top 10 SaaS Platform 2023',
-      'Customer Choice Award 2022',
-      'Innovation in Business Tools 2021',
+      'Best Business Software 2024',
+      'Top 5 SaaS Platform 2024',
+      'Customer Choice Award 2023',
+      'Innovation in Business Tools 2023',
     ],
   };
 

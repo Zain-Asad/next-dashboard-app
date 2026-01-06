@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const currentDate = new Date().toISOString().split('T')[0];
-  const version = '2.1.0';
+  const version = '3.0.0';
   
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -35,16 +35,16 @@ export default function Page() {
             <div className="space-y-3 text-gray-700 mb-6">
               <p className="text-base md:text-lg">
                 <strong>Company Overview:</strong> Acme Corporation is a leading provider of business management solutions, 
-                established in <time itemProp="foundingDate" dateTime="2015-01-15">January 2015</time>. 
-                We serve over <strong>10,000 businesses</strong> across <strong>45 countries</strong> worldwide.
+                established in <time itemProp="foundingDate" dateTime="2017-03-22">March 2017</time>. 
+                We serve over <strong>15,000 businesses</strong> across <strong>52 countries</strong> worldwide.
               </p>
               <p className="text-base md:text-lg">
                 <strong>Key Features:</strong> Our platform offers real-time analytics, automated invoicing, 
                 customer relationship management, financial reporting, and team collaboration tools.
               </p>
               <p className="text-base md:text-lg">
-                <strong>Industry Recognition:</strong> Winner of the "Best Business Software 2023" award 
-                and recognized as a "Top 10 SaaS Platform" by TechReview Magazine.
+                <strong>Industry Recognition:</strong> Winner of the "Best Business Software 2024" award 
+                and recognized as a "Top 5 SaaS Platform" by TechReview Magazine.
               </p>
               <p className="text-sm text-gray-500 mt-4">
                 Platform Version: <span data-version={version}>{version}</span> | 

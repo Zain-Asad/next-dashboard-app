@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   const lastUpdated = new Date().toISOString().split('T')[0];
-  const productsVersion = '2.1.0';
+  const productsVersion = '3.0.0';
 
   const products = [
     {
@@ -24,7 +24,7 @@ export default function ProductsPage() {
         'Email Integration',
         'Mobile Access'
       ],
-      price: 'Starting at $49/month',
+      price: 'Starting at $59/month',
       category: 'CRM'
     },
     {
@@ -39,7 +39,7 @@ export default function ProductsPage() {
         'Payment Reminders',
         'Financial Reports'
       ],
-      price: 'Starting at $39/month',
+      price: 'Starting at $49/month',
       category: 'Finance'
     },
     {
@@ -54,7 +54,7 @@ export default function ProductsPage() {
         'Export Capabilities',
         'API Access'
       ],
-      price: 'Starting at $59/month',
+      price: 'Starting at $69/month',
       category: 'Analytics'
     },
     {
@@ -69,7 +69,7 @@ export default function ProductsPage() {
         'Calendar Integration',
         'Role-Based Access'
       ],
-      price: 'Starting at $29/user/month',
+      price: 'Starting at $35/user/month',
       category: 'Collaboration'
     }
   ];

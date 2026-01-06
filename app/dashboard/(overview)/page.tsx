@@ -27,7 +27,7 @@ export default async function Page() {
     totalPendingInvoicesRaw,
   } = await fetchCardData();
 
-  const dashboardVersion = '2.1.0';
+  const dashboardVersion = '3.0.0';
   const lastUpdated = new Date().toISOString();
   // Use raw numeric values for calculations
   const totalRevenue = totalPaidInvoicesRaw + totalPendingInvoicesRaw;

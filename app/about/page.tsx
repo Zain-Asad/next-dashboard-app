@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const lastUpdated = new Date().toISOString().split('T')[0];
-  const companyVersion = '2.1.0';
+  const companyVersion = '3.0.0';
   
   return (
     <main className="min-h-screen p-6 md:p-12">
@@ -22,10 +22,10 @@ export default function AboutPage() {
           <section className="bg-white p-6 rounded-lg shadow-sm border">
             <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Acme Corporation was founded on <time itemProp="foundingDate" dateTime="2015-01-15">January 15, 2015</time> 
+              Acme Corporation was founded on <time itemProp="foundingDate" dateTime="2017-03-22">March 22, 2017</time> 
               by a team of experienced entrepreneurs and software engineers who recognized the need for a more 
               integrated approach to business management. What started as a small startup in San Francisco has 
-              grown into a global platform serving over <strong>10,000 businesses</strong> across <strong>45 countries</strong>.
+              grown into a global platform serving over <strong>15,000 businesses</strong> across <strong>52 countries</strong>.
             </p>
             <p className="text-gray-700 leading-relaxed">
               Our journey began when our founders, frustrated with the complexity of existing business management 
@@ -72,19 +72,19 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold mb-4">Company Statistics</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-3xl font-bold text-blue-600">10,000+</div>
+                <div className="text-3xl font-bold text-blue-600">15,000+</div>
                 <div className="text-sm text-gray-600 mt-1">Active Customers</div>
               </div>
               <div className="text-center p-4 bg-green-50 rounded-lg">
-                <div className="text-3xl font-bold text-green-600">45</div>
+                <div className="text-3xl font-bold text-green-600">52</div>
                 <div className="text-sm text-gray-600 mt-1">Countries Served</div>
               </div>
               <div className="text-center p-4 bg-purple-50 rounded-lg">
-                <div className="text-3xl font-bold text-purple-600">250</div>
+                <div className="text-3xl font-bold text-purple-600">320</div>
                 <div className="text-sm text-gray-600 mt-1">Team Members</div>
               </div>
               <div className="text-center p-4 bg-orange-50 rounded-lg">
-                <div className="text-3xl font-bold text-orange-600">9</div>
+                <div className="text-3xl font-bold text-orange-600">7</div>
                 <div className="text-sm text-gray-600 mt-1">Years in Business</div>
               </div>
             </div>
@@ -93,21 +93,21 @@ export default function AboutPage() {
           <section className="bg-white p-6 rounded-lg shadow-sm border">
             <h2 className="text-2xl font-semibold mb-4">Awards & Recognition</h2>
             <ul className="space-y-2 text-gray-700">
-              <li>🏆 <strong>Best Business Software 2023</strong> - TechReview Awards</li>
-              <li>⭐ <strong>Top 10 SaaS Platform 2023</strong> - TechReview Magazine</li>
-              <li>🎯 <strong>Customer Choice Award 2022</strong> - Business Software Association</li>
-              <li>💡 <strong>Innovation in Business Tools 2021</strong> - Industry Innovation Council</li>
+              <li>🏆 <strong>Best Business Software 2024</strong> - TechReview Awards</li>
+              <li>⭐ <strong>Top 5 SaaS Platform 2024</strong> - TechReview Magazine</li>
+              <li>🎯 <strong>Customer Choice Award 2023</strong> - Business Software Association</li>
+              <li>💡 <strong>Innovation in Business Tools 2023</strong> - Industry Innovation Council</li>
             </ul>
           </section>
 
           <section className="bg-white p-6 rounded-lg shadow-sm border">
             <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
             <address itemProp="address" itemScope itemType="https://schema.org/PostalAddress" className="not-italic text-gray-700">
-              <div itemProp="streetAddress">123 Business Avenue</div>
+              <div itemProp="streetAddress">789 Innovation Drive</div>
               <div>
                 <span itemProp="addressLocality">San Francisco</span>, 
                 <span itemProp="addressRegion"> CA</span> 
-                <span itemProp="postalCode"> 94105</span>
+                <span itemProp="postalCode"> 94107</span>
               </div>
               <div itemProp="addressCountry">United States</div>
             </address>

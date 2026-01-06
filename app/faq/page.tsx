@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function FAQPage() {
   const lastUpdated = new Date().toISOString().split('T')[0];
-  const faqVersion = '2.1.0';
+  const faqVersion = '3.0.0';
 
   const faqs = [
     {
@@ -21,11 +21,11 @@ export default function FAQPage() {
         },
         {
           q: 'When was Acme Corporation founded?',
-          a: 'Acme Corporation was founded on January 15, 2015, in San Francisco, California. We have been serving businesses worldwide for over 9 years.'
+          a: 'Acme Corporation was founded on March 22, 2017, in San Francisco, California. We have been serving businesses worldwide for over 7 years.'
         },
         {
           q: 'How many customers does Acme serve?',
-          a: 'We currently serve over 10,000 active customers across 45 countries worldwide. Our customer base includes small businesses, mid-market companies, and large enterprises.'
+          a: 'We currently serve over 15,000 active customers across 52 countries worldwide. Our customer base includes small businesses, mid-market companies, and large enterprises.'
         }
       ]
     },
@@ -55,7 +55,7 @@ export default function FAQPage() {
       questions: [
         {
           q: 'What are the pricing options?',
-          a: 'Our pricing starts at $29/month for basic plans. Customer Management starts at $49/month, Invoicing at $39/month, Analytics at $59/month, and Team Collaboration at $29/user/month. We also offer custom enterprise solutions with dedicated support.'
+          a: 'Our pricing starts at $35/month for basic plans. Customer Management starts at $59/month, Invoicing at $49/month, Analytics at $69/month, and Team Collaboration at $35/user/month. We also offer custom enterprise solutions with dedicated support.'
         },
         {
           q: 'Is there a free trial available?',

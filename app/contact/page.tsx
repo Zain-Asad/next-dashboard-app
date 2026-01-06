@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const lastUpdated = new Date().toISOString().split('T')[0];
-  const contactVersion = '2.1.0';
+  const contactVersion = '3.0.0';
 
   return (
     <main className="min-h-screen p-6 md:p-12">
@@ -36,11 +36,11 @@ export default function ContactPage() {
             >
               <div>
                 <strong>Headquarters:</strong>
-                <div itemProp="streetAddress">123 Business Avenue</div>
+                <div itemProp="streetAddress">789 Innovation Drive</div>
                 <div>
                   <span itemProp="addressLocality">San Francisco</span>, 
                   <span itemProp="addressRegion"> CA</span> 
-                  <span itemProp="postalCode"> 94105</span>
+                  <span itemProp="postalCode"> 94107</span>
                 </div>
                 <div itemProp="addressCountry">United States</div>
               </div>
@@ -61,12 +61,12 @@ export default function ContactPage() {
               <div>
                 <strong>Sales:</strong>
                 <div itemProp="email">sales@acme.com</div>
-                <div itemProp="telephone">+1 (555) 123-4567</div>
+                <div itemProp="telephone">+1 (555) 987-6543</div>
               </div>
               <div>
                 <strong>Customer Support:</strong>
                 <div itemProp="email">support@acme.com</div>
-                <div itemProp="telephone">+1 (555) 123-4568</div>
+                <div itemProp="telephone">+1 (555) 987-6544</div>
                 <div className="text-sm text-gray-600">Available 24/7</div>
               </div>
               <div>
@@ -106,27 +106,27 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-4 text-gray-700">
             <div>
               <h3 className="font-semibold mb-2">New York Office</h3>
-              <p className="text-sm">456 Commerce Street</p>
-              <p className="text-sm">New York, NY 10001</p>
-              <p className="text-sm">+1 (555) 234-5678</p>
+              <p className="text-sm">234 Market Plaza</p>
+              <p className="text-sm">New York, NY 10002</p>
+              <p className="text-sm">+1 (555) 876-5432</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2">London Office</h3>
-              <p className="text-sm">789 Business Square</p>
-              <p className="text-sm">London, UK EC1A 1BB</p>
-              <p className="text-sm">+44 20 1234 5678</p>
+              <p className="text-sm">567 Corporate Center</p>
+              <p className="text-sm">London, UK EC2A 2BB</p>
+              <p className="text-sm">+44 20 9876 5432</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Tokyo Office</h3>
-              <p className="text-sm">321 Innovation Tower</p>
-              <p className="text-sm">Tokyo, Japan 100-0001</p>
-              <p className="text-sm">+81 3 1234 5678</p>
+              <p className="text-sm">890 Digital Tower</p>
+              <p className="text-sm">Tokyo, Japan 100-0002</p>
+              <p className="text-sm">+81 3 9876 5432</p>
             </div>
             <div>
               <h3 className="font-semibold mb-2">Sydney Office</h3>
-              <p className="text-sm">654 Tech Boulevard</p>
-              <p className="text-sm">Sydney, Australia 2000</p>
-              <p className="text-sm">+61 2 1234 5678</p>
+              <p className="text-sm">123 Enterprise Way</p>
+              <p className="text-sm">Sydney, Australia 2001</p>
+              <p className="text-sm">+61 2 9876 5432</p>
             </div>
           </div>
         </section>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   const lastUpdated = new Date().toISOString().split('T')[0];
-  const teamVersion = '2.1.0';
+  const teamVersion = '3.0.0';
 
   const leadership = [
     {
@@ -38,27 +38,27 @@ export default function TeamPage() {
   const departments = [
     {
       name: 'Engineering',
-      count: 85,
+      count: 120,
       description: 'Our engineering team builds and maintains our platform, ensuring reliability, security, and performance.'
     },
     {
       name: 'Product',
-      count: 25,
+      count: 35,
       description: 'The product team designs user experiences and defines features that solve real business problems.'
     },
     {
       name: 'Sales & Marketing',
-      count: 45,
+      count: 65,
       description: 'Our sales and marketing team helps businesses discover and adopt our solutions.'
     },
     {
       name: 'Customer Success',
-      count: 60,
+      count: 75,
       description: 'Customer success specialists ensure our clients get maximum value from our platform.'
     },
     {
       name: 'Support',
-      count: 35,
+      count: 45,
       description: 'Support team provides 24/7 assistance to help customers resolve issues quickly.'
     }
   ];
