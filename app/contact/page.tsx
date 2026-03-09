@@ -61,12 +61,12 @@ export default function ContactPage() {
               <div>
                 <strong>Sales:</strong>
                 <div itemProp="email">sales@acme.com</div>
-                <div itemProp="telephone">+1 (555) 987-6543</div>
+                <div itemProp="telephone">+1 (555) 987-6000</div>
               </div>
               <div>
                 <strong>Customer Support:</strong>
                 <div itemProp="email">support@acme.com</div>
-                <div itemProp="telephone">+1 (555) 987-6544</div>
+                <div itemProp="telephone">+1 (555) 987-6122</div>
                 <div className="text-sm text-gray-600">Available 24/7</div>
               </div>
               <div>
